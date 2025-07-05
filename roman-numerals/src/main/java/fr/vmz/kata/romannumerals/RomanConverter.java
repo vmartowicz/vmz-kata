@@ -10,7 +10,7 @@ public class RomanConverter {
         StringBuilder roman = new StringBuilder();
 
         for(RomanToDecimal romanToDecimal : RomanToDecimal.values()) {
-            if (arabic >= romanToDecimal.arabic) {
+            while (arabic >= romanToDecimal.arabic) {
                 roman.append(romanToDecimal.roman);
                 arabic -= romanToDecimal.arabic;
             }
