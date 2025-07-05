@@ -7,7 +7,9 @@ public class RomanConverter {
     }
 
     public static String convertToRoman(int arabic) {
-        if (arabic == 2) {
+        if (arabic == 3) {
+            return "III";
+        } else  if (arabic == 2) {
             return "II";
         }
         return "I";
