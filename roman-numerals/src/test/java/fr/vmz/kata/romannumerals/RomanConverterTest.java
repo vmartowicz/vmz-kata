@@ -11,5 +11,10 @@ public class RomanConverterTest {
         assertThat(new RomanConverter().convertToRoman(1)).isEqualTo("I");
     }
 
+    @Test
+    public void convert2() {
+        assertThat(new RomanConverter().convertToRoman(2)).isEqualTo("II");
+    }
+
 
 }
