@@ -46,6 +46,10 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.of(5)).isEqualTo("Buzz");
     }
 
+    @Test
+    void shouldGetFizzBuzzForFifteen() {
+        assertThat(FizzBuzz.of(15)).isEqualTo("FizzBuzz");
+    }
 
 
 }
