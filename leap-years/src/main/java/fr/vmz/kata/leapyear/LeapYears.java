@@ -13,7 +13,7 @@ public class LeapYears {
             return true;
         }
 
-        if (isDivideBy4(year) && !isDivideBy100(year)) {
+        if (isDivideBy4(year)) {
             return true;
         }
 
