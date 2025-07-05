@@ -16,7 +16,7 @@ public class LeapYearsTest {
      */
 
     @Test
-    void shouldBeLeapYearsFor400(){
+    void shouldBeLeapYearsFor2000(){
         assertThat(LeapYears.isLeap(2000)).isTrue();
     }
 }
