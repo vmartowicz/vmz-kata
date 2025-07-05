@@ -7,16 +7,16 @@ public class RomanConverter {
     }
 
     public static String convertToRoman(int arabic) {
-        String roman = "";
+        StringBuilder roman = new StringBuilder();
 
         for(RomanToDecimal romanToDecimal : RomanToDecimal.values()) {
             if (arabic >= romanToDecimal.arabic) {
-                roman += romanToDecimal.roman;
+                roman.append(romanToDecimal.roman);
                 arabic -= romanToDecimal.arabic;
             }
         }
-         roman += "I".repeat(Math.max(0, arabic));
-        return roman;
+         roman.append("I".repeat(Math.max(0, arabic)));
+        return roman.toString();
     }
 
     enum RomanToDecimal {
