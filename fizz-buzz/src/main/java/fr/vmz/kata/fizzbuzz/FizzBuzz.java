@@ -8,9 +8,7 @@ public class FizzBuzz {
         if (isFizz(i)) {
             return "Fizz";
         }
-        if (i == 2)
-            return "2";
-        return "1";
+        return String.valueOf(i);
     }
 
     private static boolean isFizz(int i) {
