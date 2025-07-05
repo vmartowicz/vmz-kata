@@ -15,13 +15,13 @@ public class RomanConverter {
                 arabic -= romanToDecimal.arabic;
             }
         }
-         roman.append("I".repeat(Math.max(0, arabic)));
         return roman.toString();
     }
 
     enum RomanToDecimal {
         TEN("X", 10),
-        FIVE("V", 5);
+        FIVE("V", 5),
+        ONE("I", 1);
         private final String roman;
         private final int arabic;
 
