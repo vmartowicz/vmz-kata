@@ -4,6 +4,7 @@ public class LeapYears {
 
     public static final int DIVIDE_BY_100 = 100;
     public static final int DIVIDE_BY_400 = 400;
+    public static final int DIVIDE_BY_4 = 4;
 
     public static boolean isLeap(int year) {
         if (isDivideBy400(year)) {
@@ -21,7 +22,7 @@ public class LeapYears {
     }
 
     private static boolean isDivideBy4(int year) {
-        return isDivideBy(year, 4);
+        return isDivideBy(year, DIVIDE_BY_4);
     }
 
     private static boolean isDivideBy100(int year) {
