@@ -1,6 +1,9 @@
 package fr.vmz.kata.fizzbuzz;
 
 public class FizzBuzz {
+
+    public static final int FIZZ = 3;
+
     public static String of(int i) {
         if (isFizz(i)) {
             return "Fizz";
@@ -11,6 +14,6 @@ public class FizzBuzz {
     }
 
     private static boolean isFizz(int i) {
-        return i % 3 == 0;
+        return i % FIZZ == 0;
     }
 }
