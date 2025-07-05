@@ -7,7 +7,7 @@ public class FizzBuzz {
 
     public static String of(int i) {
 
-        if (i%3==0 && i%5==0) {
+        if (isFizzBuzz(i)) {
             return "FizzBuzz";
         }
 
@@ -18,6 +18,10 @@ public class FizzBuzz {
             return "Fizz";
         }
         return String.valueOf(i);
+    }
+
+    private static boolean isFizzBuzz(int i) {
+        return i % 3 == 0 && i % 5 == 0;
     }
 
     private static boolean isBuzz(int i) {
