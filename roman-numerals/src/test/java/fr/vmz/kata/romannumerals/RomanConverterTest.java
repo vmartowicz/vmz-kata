@@ -8,12 +8,12 @@ public class RomanConverterTest {
 
     @Test
     public void convert1() {
-        assertThat(new RomanConverter().convertToRoman(1)).isEqualTo("I");
+        assertThat(RomanConverter.convertToRoman(1)).isEqualTo("I");
     }
 
     @Test
     public void convert2() {
-        assertThat(new RomanConverter().convertToRoman(2)).isEqualTo("II");
+        assertThat(RomanConverter.convertToRoman(2)).isEqualTo("II");
     }
 
 
