@@ -24,5 +24,10 @@ public class LeapYearsTest {
     void shouldBeLeapYearsFor1700(){
         assertThat(LeapYears.isLeap(1700)).isTrue();
     }
+
+    @Test
+    void shouldBeLeapYearsFor2008(){
+        assertThat(LeapYears.isLeap(2008)).isTrue();
+    }
 }
 
