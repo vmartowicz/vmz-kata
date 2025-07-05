@@ -2,11 +2,11 @@ package fr.vmz.kata.fizzbuzz;
 
 public class FizzBuzz {
 
-    public static final int FIZZ_VALUE = 3;
-    public static final int BUZZ_VALUE = 5;
-    public static final String FIZZ = "Fizz";
-    public static final String BUZZ = "Buzz";
-    public static final String FIZZ_BUZZ = FIZZ + BUZZ;
+    private static final int FIZZ_VALUE = 3;
+    private static final int BUZZ_VALUE = 5;
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String FIZZ_BUZZ = FIZZ + BUZZ;
 
     public static String of(int i) {
 
@@ -17,9 +17,11 @@ public class FizzBuzz {
         if (isBuzz(i)) {
             return BUZZ;
         }
+
         if (isFizz(i)) {
             return FIZZ;
         }
+        
         return String.valueOf(i);
     }
 
