@@ -7,10 +7,10 @@ public class RomanConverter {
     }
 
     public static String convertToRoman(int arabic) {
-        String roman = "";
+        StringBuilder roman = new StringBuilder();
         for (int i = 0; i < arabic; i++) {
-            roman += "I";
+            roman.append("I");
         }
-        return roman;
+        return roman.toString();
     }
 }
