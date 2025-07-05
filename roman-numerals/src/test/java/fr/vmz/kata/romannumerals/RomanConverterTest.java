@@ -58,5 +58,9 @@ public class RomanConverterTest {
     public void convert2687() {
         assertThat(RomanConverter.convertToRoman(2687)).isEqualTo("MMDCLXXXVII");
     }
+    @Test
+    public void convert3499() {
+        assertThat(RomanConverter.convertToRoman(3499)).isEqualTo("MMMCDXCIX");
+    }
 
 }
