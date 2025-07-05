@@ -6,6 +6,11 @@ public class FizzBuzz {
     public static final int BUZZ = 5;
 
     public static String of(int i) {
+
+        if (i%3==0 && i%5==0) {
+            return "FizzBuzz";
+        }
+
         if (isBuzz(i)) {
             return "Buzz";
         }
