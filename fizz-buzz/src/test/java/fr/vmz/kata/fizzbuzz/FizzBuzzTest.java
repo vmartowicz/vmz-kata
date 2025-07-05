@@ -26,4 +26,9 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.of(1)).isEqualTo("1");
     }
 
+    @Test
+    void shouldGetTwoForTwo() {
+        assertThat(FizzBuzz.of(2)).isEqualTo("2");
+    }
+
 }
