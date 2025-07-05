@@ -5,10 +5,14 @@ public class LeapYears {
         if ( isDivideBy400(year)) {
             return true;
         }
-        if ( year % 100 ==0) {
+        if (isDivideBy100(year)) {
             return true;
         }
         return false;
+    }
+
+    private static boolean isDivideBy100(int year) {
+        return year % 100 == 0;
     }
 
     private static boolean isDivideBy400(int year) {
