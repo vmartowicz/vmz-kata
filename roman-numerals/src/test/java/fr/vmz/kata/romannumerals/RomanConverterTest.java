@@ -25,4 +25,9 @@ public class RomanConverterTest {
         assertThat(RomanConverter.convertToRoman(5)).isEqualTo("V");
     }
 
+    @Test
+    public void convert7() {
+        assertThat(RomanConverter.convertToRoman(7)).isEqualTo("VII");
+    }
+
 }

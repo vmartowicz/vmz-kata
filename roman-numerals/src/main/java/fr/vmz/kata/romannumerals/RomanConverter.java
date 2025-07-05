@@ -7,9 +7,12 @@ public class RomanConverter {
     }
 
     public static String convertToRoman(int arabic) {
-        if (arabic == 5) {
-            return "V";
+        String roman = "";
+        if (arabic >= 5) {
+            roman += "V";
+            arabic -= 5;
         }
-        return "I".repeat(Math.max(0, arabic));
+         roman += "I".repeat(Math.max(0, arabic));
+        return roman;
     }
 }
