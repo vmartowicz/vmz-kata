@@ -7,8 +7,6 @@ public class RomanConverter {
     }
 
     public static String convertToRoman(int arabic) {
-        StringBuilder roman = new StringBuilder();
-        roman.append("I".repeat(Math.max(0, arabic)));
-        return roman.toString();
+        return "I".repeat(Math.max(0, arabic));
     }
 }
