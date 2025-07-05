@@ -1,6 +1,10 @@
 package fr.vmz.kata.leapyear;
 
 public class LeapYears {
+
+    public static final int DIVIDE_BY_100 = 100;
+    public static final int DIVIDE_BY_400 = 400;
+
     public static boolean isLeap(int year) {
         if (isDivideBy400(year)) {
             return true;
@@ -12,11 +16,11 @@ public class LeapYears {
     }
 
     private static boolean isDivideBy100(int year) {
-        return isDivideBy(year, 100);
+        return isDivideBy(year, DIVIDE_BY_100);
     }
 
     private static boolean isDivideBy400(int year) {
-        return isDivideBy(year, 400);
+        return isDivideBy(year, DIVIDE_BY_400);
     }
 
     private static boolean isDivideBy(int year, int divide) {
