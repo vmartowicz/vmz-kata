@@ -2,20 +2,23 @@ package fr.vmz.kata.fizzbuzz;
 
 public class FizzBuzz {
 
-    public static final int FIZZ = 3;
-    public static final int BUZZ = 5;
+    public static final int FIZZ_VALUE = 3;
+    public static final int BUZZ_VALUE = 5;
+    public static final String FIZZ = "Fizz";
+    public static final String BUZZ = "Buzz";
+    public static final String FIZZ_BUZZ = FIZZ + BUZZ;
 
     public static String of(int i) {
 
         if (isFizzBuzz(i)) {
-            return "FizzBuzz";
+            return FIZZ_BUZZ;
         }
 
         if (isBuzz(i)) {
-            return "Buzz";
+            return BUZZ;
         }
         if (isFizz(i)) {
-            return "Fizz";
+            return FIZZ;
         }
         return String.valueOf(i);
     }
@@ -25,10 +28,10 @@ public class FizzBuzz {
     }
 
     private static boolean isBuzz(int i) {
-        return i % BUZZ == 0;
+        return i % BUZZ_VALUE == 0;
     }
 
     private static boolean isFizz(int i) {
-        return i % FIZZ == 0;
+        return i % FIZZ_VALUE == 0;
     }
 }
